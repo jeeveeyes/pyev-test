@@ -31,16 +31,16 @@ multi_proc_client.py
 
 * Program to illustrate multiprocess TCP echo client using Pyev module.
 
-  * Supports multiprocess model where master process launches workers and worker processes
+ * Supports multiprocess model where master process launches workers and worker processes
        each try to establish connections to given server independently. 
 
-  * Each client socket does a bind on a explicitly provided pair of (IP,Port) to avoid exhausting ephemeral ports on the client side.
+ * Each client socket does a bind on a explicitly provided pair of (IP,Port) to avoid exhausting ephemeral ports on the client side.
 
-  * Depends on multiprocessing module for process launch and IPC Queue.
+ * Depends on multiprocessing module for process launch and IPC Queue.
 
-  * Depends on Pyev module ( http://code.google.com/p/pyev/ ) for event management.
+ * Depends on Pyev module ( http://code.google.com/p/pyev/ ) for event management.
  
-  * Code initially based on Pyev's sample echo server.
+ * Code initially based on Pyev's sample echo server.
 
   
 Requirements
@@ -49,3 +49,8 @@ Requirements
 CPython 2.6 (Windows is untested)
 
 Pyev and libev.
+
+License
+-------
+
+New BSD License
